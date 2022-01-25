@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container main">
+    <h1>Сборка заявок</h1>
+    <div class="row">
+      <div  class="column">
+        <input type="text" placeholder="магазин и его номер" id="shop-name">
+      </div>
+      <div  class="column">
+        <input type="number" placeholder="вес зявки" id="shop-weight">
+      </div>
+      <div  class="column">
+        <input type="number" placeholder="кол-во позиций" id="shop-position">
+      </div>
+      <button id="add-button" class="button button-outline">добавить</button>
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="column column-offset-10">
+      <span id="count"></span> отборов
+    </div>
+    <div class="column">
+      <span id="count-of-weight"></span> кг
+    </div>
+    <div class="column">
+      <span id="count-of-positions"></span> стр
+    </div>
+    <button class="button button-outline">очистить</button>
+  </div>
+</body>
+<script src="script/script.js"></script>
+
+</html>

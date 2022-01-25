@@ -1,0 +1,12 @@
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  right: 9px;
+  color: #000;
+}
