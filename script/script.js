@@ -37,7 +37,7 @@ function loadFromLocalStorage() {
       span3.className = "column"
       div.className = "d-flex"
       button.className = "button"
-      button.innerText = "удалить"
+      button.innerText = "уд"
       container.appendChild(div)
       div.append(span1)
       div.append(span2)
