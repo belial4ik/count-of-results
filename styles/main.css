@@ -1,12 +1,23 @@
-.main {
-  height: 100vh;
-  position: relative;
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  font-size: 25px;
-  right: 9px;
-  color: #000;
+  display: flex;
+  color: #000;  
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer, .d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .d-flex {
+    border-bottom: 1px solid #000;
+  }
 }

@@ -9,9 +9,9 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container main">
+  <div class="container">
     <h1>Сборка заявок</h1>
-    <div class="row">
+    <div class="row main">
       <div  class="column">
         <input type="text" placeholder="магазин и его номер" id="shop-name">
       </div>
@@ -24,9 +24,10 @@
       <button id="add-button" class="button button-outline">добавить</button>
     </div>
   </div>
-  <div class="row footer">
-    <div class="column column-offset-10">
-      <span id="count"></span> отборов
+  <hr />
+  <div class="container footer">
+    <div class="column">
+      <span id="count"></span> отб
     </div>
     <div class="column">
       <span id="count-of-weight"></span> кг
@@ -34,7 +35,7 @@
     <div class="column">
       <span id="count-of-positions"></span> стр
     </div>
-    <button class="button button-outline">очистить</button>
+    <button id="clearBtn" class="button button-outline">очистить</button>
   </div>
 </body>
 <script src="script/script.js"></script>
