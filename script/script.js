@@ -37,7 +37,7 @@ function loadFromLocalStorage() {
       span3.className = "column"
       div.className = "d-flex"
       button.className = "button"
-      button.innerText = "уд"
+      button.innerText = "❌"
       container.appendChild(div)
       div.append(span1)
       div.append(span2)
@@ -124,7 +124,7 @@ function createDeleteElement(valueShopName,valueWeight,valuePositions) {
   span3.className = "column"
   div.className = "d-flex"
   button.className = "button"
-  button.innerText = "удалить"
+  button.innerText = "❌"
   
   span1.innerText = valueShopName
   span2.innerText = valueWeight
