@@ -47,21 +47,15 @@ function loadFromLocalStorage() {
       span1.innerText += nameOfMagazine
       span2.innerText += countOfWeight
       span3.innerText += countOfPositions
-      console.dir(span1)
-      console.dir(span2)
-      console.dir(span3)
 
       w += +span2.outerText
       p += +span3.outerText
-
-      // console.log(countOfWeight);
-      // console.log(countOfPositions);
 
       countSpan.innerText = getStoreData.length
       countOfWeightSpan.innerText = w
       countOfPositionsSpan.innerText = p      
 
-      button.addEventListener("click", () => {
+      button.addEventListener("click", (id) => {
         const outerTextSpan2 = span2.outerText;
         const outerTextSpan3 = span3.outerText;        
         
@@ -73,12 +67,6 @@ function loadFromLocalStorage() {
         countOfPositionsSpan.innerText = p
 
         container.removeChild(div)
-
-        // getStoreData.filter((el,id) => {
-        //   if(el.id === id) {
-            
-        //   }
-        // })
       })
     })
   }  
@@ -101,9 +89,7 @@ function createDeleteElement(valueShopName,valueWeight,valuePositions) {
   const span2 = document.createElement("span")
   const span3 = document.createElement("span")
   const button = document.createElement("button")
-  // console.log(getStoreData.length);
-// 
-  // let aaa = getStoreData.length
+  
   let newX = getStoreData == null ? x += 1 : getStoreData.length + 1
   w += +valueWeight
   p += +valuePositions
